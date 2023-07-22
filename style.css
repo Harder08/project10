@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 338px 50px;
+    background-color: #eee;
+    grid-gap: 20px;
+    padding: 30px;
+    font-weight: bold;
+}
+
+span {
+    color: red;
+}
+
+.first-col {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-shadow: 0px 1px 0px 0px #0000004a;
+}
+
+.sec-col {
+    grid-area: 1 / 2 / 2 / 3 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.Register {
+    grid-area: 2 / 1 / 3 / 3;
+    background-color: hsl(174deg 100% 29%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+::placeholder {
+    font-weight: bold;
+    color: hsl(0deg 0% 72%);
+}
+
+#message {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px 0px #0000004a;
+}
